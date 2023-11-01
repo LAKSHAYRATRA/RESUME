@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    min-height: 150vh;
+    border: 5px solid black;
+    background-image: linear-gradient(rgb(240, 206, 84),rgb(184, 233, 100),rgb(116, 241, 103),rgb(100, 232, 146),rgb(103, 249, 205),rgb(75, 236, 231));
+}
+.header{
+    position: relative;
+}
+.photo{
+    position: absolute;
+    top: 2vh;
+    right: 7vw;
+    border: 2px solid black;
+}
+.name{
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+}
+.myname{
+    border-right: 2px solid black;
+    overflow: hidden;
+    height: 2rem;
+    animation: word_type 3s steps(14) infinite;
+}
+@keyframes word_type{
+    from{
+        width: 0;
+    }
+    to{
+        width:100%;
+    }
+}
+a{
+    color: hotpink;
+}
+.links{
+    position: absolute;
+    top: 60vh;
+    right: 15vw;
+}
+.education{
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+}
+.skills{
+    position: absolute;
+    top: 70vh;
+    left: 5vw;
+}
+.projects{
+    position: absolute;
+    top: 120vh;
+    left: 5vw;
+}
+.projects a{
+    color:hotpink;
+    text-decoration: none;
+}
